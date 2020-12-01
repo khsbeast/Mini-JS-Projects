@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="container">
+        <h1>JS QR Code Generator</h1>
+        <p class="bold">------------- <span>Convert text to QR</span> -------------</p>
+        <input class="noOutline" id="qr-text" type="text" placeholder="Write something..."/>
+        <button class="noOutline" id="create">Create</button>
+        <p id="qr-result" class="result">This is deault QR code:</p>
+        <canvas id="qr-code"></canvas>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
