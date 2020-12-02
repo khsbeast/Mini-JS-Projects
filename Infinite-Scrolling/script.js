@@ -39,11 +39,7 @@ const showPosts = async()=>{
 
 const showLoading = ()=>{
 
-    if(page===21){
-        const el = document.createElement('div');
-        el.innerHTML = 'no more posts';
-        postsContainer.appendChild(el);
-    }else{
+   
     loading.classList.add('show');
 
     setTimeout(()=>{
@@ -54,7 +50,6 @@ const showLoading = ()=>{
     setTimeout(()=>{
         loading.classList.remove('show')
     }, 1000)
-}
 }
 
 // Filter posts
